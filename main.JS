@@ -69,7 +69,17 @@ function Keydown(e){
     }
     if (buttoncode=="68"){
         right2();
-    }    
+    }   
+    
+    if(car1_x>900){
+        console.log("car 1 has won!")
+        document.getElementById("game_status").innerHTML=" Car 1 Won!!"
+    }
+
+    if(car2_x>900){
+        console.log("car 2 has won!")
+        document.getElementById("game_status").innerHTML=" Car 2 Won!!"
+    }
 }
 function up(){
     if(car1_y>=0){
